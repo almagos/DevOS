@@ -76,18 +76,17 @@ These values MUST NOT be hardcoded.
 
 ------------------------------------------------------------------------
 
-# Authoring Workflow
+# Authoring Process
 
-1.  Read the Execution Contract template.
-2.  Create the feature title.
-3.  Write the Execution Contract.
-4.  Select one Domain label.
-5.  Select one Area label.
-6.  Select one Work label.
-7.  Select one Lifecycle label.
-8.  Optionally select one Executor label.
-9.  Copy UUIDs from the registry.
-10. Submit using Bruno.
+1. Read `standards/templates/linear-issue-template.md`.
+2. Gather all available requirements, architecture, ADRs, patterns and related documentation.
+3. Determine the appropriate parent issue.
+4. Select the correct labels using the Label UUID Registry.
+5. Write the Linear Issue by following the Linear Issue Template.
+6. Make the Engineering Instructions specific to this feature and repository. They should guide autonomous coding agents by identifying reusable patterns, components, constraints and implementation expectations. Avoid generic advice.
+7. Serialize the completed Markdown unchanged into the `description` field.
+8. Validate the GraphQL payload.
+9. Submit the payload using Bruno.
 
 ------------------------------------------------------------------------
 
