@@ -253,18 +253,22 @@ The issue is complete when:
 
 # Engineering Instructions
 
-Instructions specifically for coding agents.
+Provide implementation guidance that is specific to this feature and repository.
 
-Include guidance on:
+Include repository-specific expectations where applicable, such as:
 
-- Existing patterns to reuse
-- Files likely to change
+- Existing components to reuse
+- Existing patterns to follow
+- Existing services or utilities to extend
+- Files or modules likely to change
 - Performance expectations
 - Accessibility expectations
-- Coding standards
-- Things to avoid
+- Security expectations
+- Coding standards to follow
+- Documentation updates required
+- Behaviors or architectural decisions to avoid
 
-This section should maximize autonomous implementation quality.
+Avoid generic guidance that applies to every issue. The objective of this section is to help autonomous coding agents implement this feature consistently with the repository architecture while minimizing ambiguity and unnecessary implementation decisions.
 
 ---
 
