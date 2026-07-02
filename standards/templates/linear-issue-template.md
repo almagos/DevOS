@@ -20,7 +20,7 @@ The completed template is serialized unchanged into the Linear Issue `descriptio
 
 # Repository References
 
-Issue creation is governed by:
+Creation and serialization of this template are governed by:
 
 `standards/linear-authoring-standard.md`
 
