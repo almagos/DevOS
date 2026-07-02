@@ -272,16 +272,51 @@ Avoid generic guidance that applies to every issue. The objective of this sectio
 
 ---
 
-# References
+# Context References
 
-Reference existing repository knowledge instead of duplicating it.
+## Repository Standards
 
-Examples:
+List the repository standards that govern implementation.
 
-- Requirements
-- ADRs
-- Architecture
-- Standards
-- Patterns
-- Previous Issues
-- External Specifications
+Examples
+
+- standards/linear-authoring-standard.md
+- standards/templates/linear-issue-template.md
+
+---
+
+## Related Issues
+
+List related Linear Issues that provide implementation context.
+
+Examples
+
+- Parent Issue
+- Prototype Issue
+- Supporting Architecture
+- Dependency Issues
+
+---
+
+## Architecture References
+
+List architecture documents, ADRs, patterns or requirements that define implementation expectations.
+
+Examples
+
+- docs/architecture/*
+- docs/patterns/*
+- docs/decisions/*
+- docs/requirements/*
+
+---
+
+## Design References
+
+List UI prototypes, mockups or design artifacts that define the expected user experience.
+
+Examples
+
+- ALM-44 — Artifact Viewer Prototype
+
+Only include references that are directly relevant to implementing this issue.
