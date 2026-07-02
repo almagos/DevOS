@@ -18,6 +18,14 @@ The Execution Contract is stored as Markdown inside the Linear Issue
 
 ------------------------------------------------------------------------
 
+# Repository References
+
+The structure of the Linear Issue `description` field is defined by:
+
+`standards/templates/linear-issue-template.md`
+
+------------------------------------------------------------------------
+
 # DevOS ↔ Linear Mapping
 
   DevOS                Linear              API Field
