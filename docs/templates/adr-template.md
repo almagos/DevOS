@@ -1,5 +1,9 @@
 # ADR-XXX: <Decision Title>
 
+Architectural Decision Records capture stable architectural decisions.
+
+They document the final decision and rationale rather than discussion history, implementation history, or meeting notes.
+
 > **Status:** Proposed | Accepted | Superseded | Deprecated
 >
 > **Date:** YYYY-MM-DD
@@ -112,8 +116,30 @@ List related architectural decisions.
 
 ---
 
-# Revision History
+# Status History
 
-| Version | Date | Summary |
-|----------|------|---------|
-| 1.0 | YYYY-MM-DD | Initial version |
+| Status | Date | Notes |
+|---------|------|-------|
+| Proposed | YYYY-MM-DD | Initial proposal |
+
+Architectural Decision Records should evolve through status transitions rather than document revisions.
+
+Typical lifecycle:
+
+```
+Proposed
+
+↓
+
+Accepted
+
+↓
+
+Superseded (Optional)
+
+↓
+
+Deprecated (Optional)
+```
+
+When an architectural decision changes significantly, create a new ADR and reference the previous one instead of rewriting history.
