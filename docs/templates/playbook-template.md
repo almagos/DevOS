@@ -9,6 +9,12 @@
 > **Applies To:** <Lifecycle Stage>
 >
 > This playbook defines the workflow for <workflow purpose>.
+>
+> It describes **what** the workflow must accomplish.
+>
+> Implementation details, automation, and project-specific procedures belong in runbooks.
+
+---
 
 ---
 
