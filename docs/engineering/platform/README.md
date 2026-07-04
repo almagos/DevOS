@@ -23,7 +23,7 @@ Documents cloud infrastructure, runtime environments, deployment platforms, and 
 
 ## Related Documents
 
-- [docs/engineering/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/engineering/README.md)
+- [docs/engineering/README.md](../README.md)
 
 ## Naming Conventions
 

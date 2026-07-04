@@ -23,7 +23,7 @@ Defines repository structure, documentation governance, and workspace organizati
 
 ## Related Documents
 
-- [documentation-architecture.md](file:///Users/guru/Dev/Almagos%20Labs/docs/engineering/repository/documentation-architecture.md)
+- [documentation-architecture.md](documentation-architecture.md)
 
 ## Naming Conventions
 

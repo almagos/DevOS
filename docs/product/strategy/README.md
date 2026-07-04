@@ -23,7 +23,7 @@ Provides high-level direction, product vision, strategic goals, and core product
 
 ## Related Documents
 
-- [docs/product/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/product/README.md)
+- [docs/product/README.md](../README.md)
 
 ## Naming Conventions
 

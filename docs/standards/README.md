@@ -24,7 +24,7 @@ Defines authoritative constraints, coding standards, documentation policies, and
 
 ## Related Documents
 
-- [linear-authoring-standard.md](file:///Users/guru/Dev/Almagos%20Labs/docs/standards/linear-authoring-standard.md)
+- [linear-authoring-standard.md](../integrations/linear/authoring-standard.md)
 
 ## Naming Conventions
 

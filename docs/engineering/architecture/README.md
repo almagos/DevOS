@@ -24,7 +24,7 @@ Defines technical design, system components, subsystem relationships, and data f
 
 ## Related Documents
 
-- [docs/engineering/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/engineering/README.md)
+- [docs/engineering/README.md](../README.md)
 
 ## Naming Conventions
 

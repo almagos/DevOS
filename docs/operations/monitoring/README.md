@@ -23,7 +23,7 @@ Covers observability, alerting, metrics collection, log aggregations, and SLA/SL
 
 ## Related Documents
 
-- [docs/operations/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/operations/README.md)
+- [docs/operations/README.md](../README.md)
 
 ## Naming Conventions
 

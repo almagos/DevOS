@@ -23,7 +23,7 @@ Provides actionable, step-by-step guides for diagnosing, mitigating, and resolvi
 
 ## Related Documents
 
-- [docs/operations/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/operations/README.md)
+- [docs/operations/README.md](../README.md)
 
 ## Naming Conventions
 

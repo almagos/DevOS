@@ -26,7 +26,7 @@ Serves as the knowledge hub for technical design, software architecture, platfor
 
 ## Related Documents
 
-- [documentation-architecture.md](file:///Users/guru/Dev/Almagos%20Labs/docs/engineering/repository/documentation-architecture.md)
+- [documentation-architecture.md](repository/documentation-architecture.md)
 
 ## Naming Conventions
 

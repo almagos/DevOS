@@ -23,7 +23,7 @@ Details external system integrations, third-party APIs, and product ecosystem to
 
 ## Related Documents
 
-- [docs/product/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/product/README.md)
+- [docs/product/README.md](../README.md)
 
 ## Naming Conventions
 

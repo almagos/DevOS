@@ -23,7 +23,7 @@ Captures core domain models, business terminology, bounded contexts, and domain 
 
 ## Related Documents
 
-- [docs/product/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/product/README.md)
+- [docs/product/README.md](../README.md)
 
 ## Naming Conventions
 

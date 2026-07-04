@@ -25,7 +25,7 @@ Defines product-level knowledge explaining what the system is, who it serves, an
 
 ## Related Documents
 
-- [docs/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/README.md)
+- [docs/README.md](../README.md)
 
 ## Naming Conventions
 

@@ -23,7 +23,7 @@ Contains operational knowledge regarding deployment releases, system monitoring,
 
 ## Related Documents
 
-- [docs/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/README.md)
+- [docs/README.md](../README.md)
 
 ## Naming Conventions
 

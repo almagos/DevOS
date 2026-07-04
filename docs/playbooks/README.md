@@ -24,8 +24,8 @@ Defines repeatable execution workflows and step-by-step procedures for human and
 
 ## Related Documents
 
-- [AGENTS.md](file:///Users/guru/Dev/Almagos%20Labs/AGENTS.md)
-- [docs/README.md](file:///Users/guru/Dev/Almagos%20Labs/docs/README.md)
+- [AGENTS.md](../../AGENTS.md)
+- [docs/README.md](../README.md)
 
 ## Naming Conventions
 
