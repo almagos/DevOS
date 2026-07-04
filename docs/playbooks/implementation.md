@@ -121,7 +121,7 @@ Implementation should:
 
 ## Step 4
 
-Perform self-validation.
+Perform Implementation Validation.
 
 Verify:
 
@@ -157,7 +157,7 @@ Merge only after approval.
 
 ## Step 7
 
-Update the Parent Issue Context.
+Ensure the Parent Issue Context has been updated.
 
 After every merged Pull Request:
 
@@ -215,7 +215,7 @@ Every Child Issue belongs to exactly one Parent Issue.
 
 ## Rule 5
 
-Every merged Pull Request updates the Parent Issue Context.
+Every merged Pull Request must result in the Parent Issue Context being updated.
 
 ---
 
