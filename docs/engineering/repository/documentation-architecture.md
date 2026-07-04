@@ -196,7 +196,7 @@ Those responsibilities belong elsewhere.
 |-------------|-----------------|
 | Planned Work | Project Management System |
 | Source Code | Version Control |
-| Implemented Knowledge | Repository Documentation |
+| Canonical Knowledge | Repository Documentation |
 | Generated Operational State | `.devos/` |
 
 ---
@@ -215,6 +215,16 @@ templates/
 ```
 
 Each top-level directory represents a stable knowledge domain.
+
+Every documentation directory should contain a `README.md` that describes:
+
+- Purpose
+- What belongs in the directory
+- What does not belong in the directory
+- Related directories
+- Related documentation
+
+Directory `README.md` files serve as navigation documents and should not duplicate the contents of individual documents.
 
 ---
 
@@ -364,16 +374,16 @@ Ownership determines long-term stewardship rather than who edits a document on a
 
 # 9. Knowledge Synchronization
 
-Repository documentation is updated through the Knowledge Synchronization workflow.
+Canonical Knowledge is updated through the Knowledge Synchronization workflow.
 
 Knowledge Synchronization is responsible for:
 
 - Identifying affected documentation
-- Updating canonical knowledge
+- Updating Canonical Knowledge
 - Removing obsolete information
 - Maintaining repository consistency
 
-Documentation should never be manually updated during implementation unless explicitly required by a playbook.
+Canonical Knowledge should not be manually updated during implementation unless explicitly required by a playbook.
 
 ---
 
@@ -419,7 +429,7 @@ Every repeatable workflow has a playbook.
 
 ## Law 7
 
-Documentation must remain synchronized with implementation.
+Canonical Knowledge must remain synchronized with validated implementation.
 
 ---
 
