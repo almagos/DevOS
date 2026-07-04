@@ -1,4 +1,4 @@
-# Repository Documentation
+# DevOS Documentation Index
 
 > **Status:** Stable
 >
@@ -6,75 +6,150 @@
 >
 > **Owner:** DevOS
 >
-> Welcome to the canonical documentation for this repository.
+> **Applies To:** Entire Repository
 >
-> The repository follows a knowledge-first documentation architecture where documentation is treated as a first-class artifact and remains synchronized with implemented reality.
+> This document provides the primary entry point into the DevOS documentation system.
+>
+> It explains how repository knowledge is organized and how contributors—human or AI—should navigate it.
 
 ---
 
-# Quick Start
+# Documentation Architecture
 
-Choose the path that best matches your role.
+Repository knowledge is organized into the following layers.
 
-## AI Agent
+```
+Repository Constitution
 
-Read in the following order:
+↓
 
-1. `/AGENTS.md`
-2. `engineering/repository/documentation-architecture.md`
-3. `engineering/repository/repository-structure.md`
-4. Relevant Playbook
-5. Relevant Standards
-6. Relevant Template
-7. Domain Documentation
-8. Assigned Task
+Glossary
+
+↓
+
+Contracts
+
+↓
+
+Playbooks
+
+↓
+
+Standards
+
+↓
+
+Templates
+
+↓
+
+Domain Knowledge
+
+↓
+
+Generated Operational State
+```
+
+Each layer builds upon the previous layer.
 
 ---
 
-## Product
+# Reading Order
 
-Start here:
+New contributors should read documentation in the following order.
 
-```
-product/
-├── strategy/
-├── domain/
-├── users/
-├── features/
-└── integrations/
-```
-
----
-
-## Engineering
-
-Start here:
-
-```
-engineering/
-├── architecture/
-├── platform/
-├── repository/
-├── patterns/
-└── decisions/
-```
-
----
-
-## Operations
-
-Start here:
-
-```
-operations/
-├── release/
-├── monitoring/
-└── runbooks/
-```
+| Level | Documents |
+|--------|-----------|
+| 0 | `AGENTS.md` |
+| 1 | Documentation Architecture<br>Repository Structure |
+| 2 | Glossary |
+| 3 | Relevant Playbooks |
+| 4 | Relevant Standards |
+| 5 | Relevant Templates |
+| 6 | Domain Documentation |
+| 7 | Assigned Task |
 
 ---
 
 # Documentation Map
+
+## Repository Constitution
+
+Defines the repository foundation.
+
+| Document | Purpose |
+|----------|---------|
+| `AGENTS.md` | Repository operating instructions |
+| `engineering/repository/documentation-architecture.md` | Documentation architecture |
+| `engineering/repository/repository-structure.md` | Repository architecture |
+
+---
+
+## Glossary
+
+Defines the canonical repository vocabulary.
+
+| Document | Purpose |
+|----------|---------|
+| `glossary.md` | Canonical terminology |
+
+---
+
+## Contracts
+
+Define interfaces between repository systems.
+
+| Document | Purpose |
+|----------|---------|
+| `engineering/repository/issue-context-specification.md` | Issue Context contract |
+| `engineering/repository/issue-context-model.md` | Issue Context data model |
+
+---
+
+## Playbooks
+
+Define lifecycle workflows.
+
+| Document | Purpose |
+|----------|---------|
+| `planning.md` | Planning workflow |
+| `implementation.md` | Implementation workflow |
+| `validation.md` | Validation workflow |
+| `knowledge-synchronization.md` | Knowledge Synchronization workflow |
+| `release.md` | Release workflow |
+
+---
+
+## Standards
+
+Define repository rules.
+
+| Document | Purpose |
+|----------|---------|
+| `documentation-standard.md` | Documentation rules |
+| `repository-standard.md` | Repository organization rules |
+| `writing-standard.md` | Writing conventions |
+| `naming-standard.md` | Naming conventions |
+
+---
+
+## Templates
+
+Provide reusable document structures.
+
+| Document | Purpose |
+|----------|---------|
+| `adr-template.md` | Architectural Decision Records |
+| `playbook-template.md` | Playbooks |
+| `standard-template.md` | Standards |
+| `architecture-document-template.md` | Architecture documents |
+| `runbook-template.md` | Runbooks |
+
+---
+
+## Domain Knowledge
+
+Project-specific knowledge is organized by domain.
 
 ```
 docs/
@@ -85,132 +160,55 @@ docs/
 ├── engineering/
 │   How is it built?
 │
-├── operations/
-│   How is it operated?
-│
-├── playbooks/
-│   How is work performed?
-│
-├── standards/
-│   What rules govern the repository?
-│
-└── templates/
-    How should recurring documents be structured?
+└── operations/
+    How is it operated?
 ```
 
 ---
 
-# Documentation Domains
+## Generated Operational State
 
-## Product
+Machine-generated operational artifacts are stored under:
 
-Defines the product from a business perspective.
+```
+.devos/
+```
 
-Examples:
+Examples include:
 
-- Vision
-- Principles
-- Domain
-- Users
-- Features
-- Product Integrations
+- Issue Context
+- Knowledge Synchronization Reports
+- Generated Metadata
 
----
-
-## Engineering
-
-Defines the technical implementation.
-
-Examples:
-
-- Architecture
-- Platform
-- Repository
-- Patterns
-- Architecture Decisions
+Generated Operational State is reproducible and is never Canonical Knowledge.
 
 ---
 
-## Operations
+# Source of Truth
 
-Defines how the system is operated.
+Every category of information has exactly one Source of Truth.
 
-Examples:
-
-- Release
-- Monitoring
-- Runbooks
-
----
-
-## Playbooks
-
-Defines repeatable workflows.
-
-Examples:
-
-- Planning
-- Implementation
-- Validation
-- Knowledge Synchronization
-- Release
-- Maintenance
-
----
-
-## Standards
-
-Defines repository rules and conventions.
-
-Examples:
-
-- Documentation
-- Repository
-- Naming
-- Writing
-- Diagrams
-
----
-
-## Templates
-
-Provides reusable document templates.
-
-Examples:
-
-- Feature
-- Integration
-- Architecture
-- Pattern
-- ADR
-- Playbook
-- Runbook
-
----
-
-# Repository Constitution
-
-The repository is governed by the following constitutional documents.
-
-1. `/AGENTS.md`
-2. `engineering/repository/documentation-architecture.md`
-3. `engineering/repository/repository-structure.md`
-
-These documents define how the repository is organized and should be consulted before introducing structural changes.
+| Information | Source of Truth |
+|-------------|-----------------|
+| Planning | Project Management System |
+| Source Code | Version Control |
+| Canonical Knowledge | `docs/` |
+| Generated Operational State | `.devos/` |
 
 ---
 
 # Repository Principles
 
-The documentation system follows these principles.
+The repository follows these principles.
 
-- Canonical Knowledge is a first-class artifact.
-- Every document has exactly one canonical home.
-- Documentation reflects implemented reality.
-- Generated operational state is never a source of truth.
-- Repeatable workflows are defined by playbooks.
-- Repository rules are defined by standards.
-- Recurring documents use templates.
+- Every document has exactly one responsibility.
+- Every piece of knowledge has exactly one canonical location.
+- Documentation represents implemented reality.
+- Generated Operational State is never Canonical Knowledge.
+- Stable terminology is defined by the Glossary.
+- Repository workflows are defined by Playbooks.
+- Repository rules are defined by Standards.
+- Recurring document structures are defined by Templates.
 
 ---
 
@@ -219,32 +217,44 @@ The documentation system follows these principles.
 Before creating or modifying documentation:
 
 1. Read the relevant playbook.
-2. Follow applicable standards.
+2. Review applicable standards.
 3. Use the appropriate template.
 4. Update Canonical Knowledge through the Knowledge Synchronization workflow.
 
-Avoid introducing duplicate knowledge or undocumented repository structure.
+Avoid:
+
+- Duplicate knowledge
+- Undocumented repository structure
+- Inconsistent terminology
+- Manual updates outside the appropriate workflow
 
 ---
 
 # Related Documents
 
-Repository Constitution
+## Repository Constitution
 
+- `AGENTS.md`
 - `engineering/repository/documentation-architecture.md`
 - `engineering/repository/repository-structure.md`
 
-Repository Bootstrap
+---
 
-- `/AGENTS.md`
+## Repository Vocabulary
 
-Documentation Framework
+- `glossary.md`
+
+---
+
+## Repository Framework
 
 - `playbooks/`
 - `standards/`
 - `templates/`
 
-Documentation Domains
+---
+
+## Domain Knowledge
 
 - `product/`
 - `engineering/`
