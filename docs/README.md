@@ -19,6 +19,11 @@
 Repository knowledge is organized into three architectural layers.
 
 ```
+# Documentation Architecture
+
+Repository knowledge is organized into three architectural layers.
+
+```text
 Core DevOS
 │
 ├── Repository Constitution
@@ -27,7 +32,8 @@ Core DevOS
 ├── Playbooks
 ├── Standards
 ├── Templates
-└── Integrations
+├── Integrations
+└── Certifications
 
 ↓
 
@@ -46,7 +52,7 @@ Generated Operational State
 
 Each layer has a distinct responsibility.
 
-- **Core DevOS** defines how work is planned, implemented, validated and documented.
+- **Core DevOS** defines how work is planned, implemented, validated, documented and certified.
 - **Project Knowledge** describes the implemented product and its operation.
 - **Generated Operational State** supports automation and AI workflows and is never Canonical Knowledge.
 
@@ -140,10 +146,23 @@ Provide reusable document structures.
 | Document | Purpose |
 |----------|---------|
 | `adr-template.md` | Architectural Decision Records |
-| `playbook-template.md` | Playbooks |
-| `standard-template.md` | Standards |
 | `architecture-document-template.md` | Architecture documents |
+| `playbook-template.md` | Playbooks |
 | `runbook-template.md` | Runbooks |
+| `specification-template.md` | Specifications |
+| `standard-template.md` | Standards |
+| `certification-report-template.md` | Certification reports |
+
+---
+
+## Certifications
+
+Define repeatable repository certification workflows.
+
+| Document | Purpose |
+|----------|---------|
+| `playbooks/bootstrap-certification.md` | Bootstrap certification workflow |
+| `templates/certification-report-template.md` | Standard certification report structure |
 
 ---
 
@@ -222,6 +241,7 @@ The repository follows these principles.
 - Repository rules are defined by Standards.
 - Recurring document structures are defined by Templates.
 - External platforms are governed by Integration documentation.
+- Repository quality is evaluated through repeatable Certification workflows.
 
 ---
 
@@ -233,6 +253,7 @@ Before creating or modifying documentation:
 2. Review applicable standards.
 3. Use the appropriate template.
 4. Update Canonical Knowledge through the Knowledge Synchronization workflow.
+5. Execute applicable Certification playbooks before major releases or architectural changes.
 
 Avoid:
 
@@ -264,6 +285,13 @@ Avoid:
 - `playbooks/`
 - `standards/`
 - `templates/`
+
+---
+
+## Repository Certification
+
+- `playbooks/bootstrap-certification.md`
+- `templates/certification-report-template.md`
 
 ---
 
