@@ -115,9 +115,9 @@ docs/operations/
 
 ## Level 6 — Assigned Task
 
-Only after understanding repository knowledge should implementation begin.
+Retrieve the assigned work item from the configured Work Management System.
 
-If required documentation does not yet exist, stop at the highest available level of repository knowledge and follow the documented architecture rather than inventing new repository structure, workflows, standards, or templates.
+Only after understanding both the repository knowledge and the assigned work item should implementation begin.
 
 ---
 
@@ -153,7 +153,26 @@ Refer to the corresponding playbook for detailed workflow instructions.
 
 ---
 
-# 5. Working Rules
+# 5. Repository Systems
+
+This repository integrates with external systems that act as Sources of Truth for specific responsibilities.
+
+Always retrieve information from the appropriate system rather than inferring or recreating it.
+
+| Responsibility | System | Purpose |
+|---------------|--------|---------|
+| Work Management | Linear | Requirements, planning, issue tracking and implementation contracts |
+| Source Control | GitHub | Source code, pull requests, releases and version history |
+| Repository Knowledge | Repository Documentation | Canonical product, engineering and operational knowledge |
+| Generated Operational State | `.devos/` | Generated reports, prompts, metadata and operational artifacts |
+
+Repository documentation remains the canonical Source of Truth for knowledge.
+
+External systems provide operational context but do not replace repository knowledge.
+
+---
+
+# 6. Working Rules
 
 ## Repository
 
@@ -196,20 +215,21 @@ Refer to the corresponding playbook for detailed workflow instructions.
 
 ---
 
-# 6. When Unsure
+# 7. When Unsure
 
-When repository knowledge is insufficient:
+When repository knowledge is insufficient, consult the appropriate Repository System before making assumptions.
 
 1. Search existing documentation.
 2. Reuse existing patterns.
 3. Follow repository conventions.
 4. Make the smallest reasonable change.
-5. Do not invent new architecture.
-6. Escalate uncertainty rather than guessing.
+5. Retrieve missing operational context from the configured Repository System.
+6. Do not invent new architecture.
+7. Escalate uncertainty rather than guessing.
 
 ---
 
-# 7. Definition of Done
+# 8. Definition of Done
 
 A task is complete only when all applicable conditions are satisfied.
 
@@ -222,7 +242,7 @@ A task is complete only when all applicable conditions are satisfied.
 
 ---
 
-# 8. Forbidden Actions
+# 9. Forbidden Actions
 
 Never:
 
@@ -237,7 +257,7 @@ Never:
 
 ---
 
-# 9. Decision Priority
+# 10. Decision Priority
 
 When multiple sources appear to conflict, use the following precedence.
 
@@ -247,12 +267,17 @@ When multiple sources appear to conflict, use the following precedence.
 4. Relevant Playbook
 5. Relevant Standards
 6. Relevant Templates
-7. Domain Documentation
-8. Assigned Task
+7. Repository Systems
+8. Domain Documentation
+9. Assigned Work Item
+
+Repository Systems provide operational context.
+
+Repository Documentation remains the canonical Source of Truth.
 
 ---
 
-# 10. Continuous Improvement
+# 11. Continuous Improvement
 
 If implementation exposes weaknesses in DevOS:
 
