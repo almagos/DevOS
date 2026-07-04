@@ -1,4 +1,4 @@
-# Documentation
+# Repository Documentation
 
 > **Status:** Stable
 >
