@@ -1,4 +1,3 @@
-
 # Architecture
 
 > **Status:** Stable
@@ -9,67 +8,83 @@
 >
 > **Applies To:** Repository Architecture
 >
-> This directory contains the high-level architectural description of the repository and the systems built using DevOS.
+> This directory contains architecture documentation that describes the stable design of a repository or system built using DevOS.
 
 ---
 
 # Purpose
 
-Architecture documents explain the fundamental design of the system.
+Architecture documents explain the long-term structure of a system.
 
-They answer **why the system exists**, **what it is**, **who it serves**, and **how it works**.
+They describe:
 
-Architecture documents describe stable concepts rather than implementation details.
+- Why the architecture exists.
+- The major architectural concepts.
+- High-level system design.
+- Stable boundaries and responsibilities.
+- Significant architectural constraints.
+
+Architecture documentation should remain stable over time and avoid implementation-specific details.
 
 ---
 
-# Architecture Framework
+# What Belongs Here
 
-DevOS organizes architecture into four complementary perspectives.
+Examples include:
 
-| Document | Purpose |
-|----------|---------|
-| `why.md` | Why the system exists |
-| `what.md` | What the system is |
-| `who.md` | Who the stakeholders and users are |
-| `how.md` | How the system is designed and operates |
+- System Architecture
+- Repository Architecture
+- Platform Architecture
+- Integration Architecture
+- Data Architecture
+- Security Architecture
+- Deployment Architecture
+- Architectural Principles
+- High-Level Design
 
-Together these documents provide a complete architectural understanding of the system.
+Not every repository requires every architecture document.
+
+Only create architecture documents that provide long-term value.
+
+---
+
+# What Does Not Belong Here
+
+Do not place the following in this directory:
+
+- Feature specifications
+- User requirements
+- Coding standards
+- Implementation details
+- Playbooks
+- Runbooks
+- Temporary design discussions
+- Meeting notes
+
+These belong in their respective repository domains.
 
 ---
 
 # Design Principles
 
-Architecture documents should:
+Architecture documentation should:
 
 - Describe stable concepts.
-- Focus on long-term design.
-- Remain implementation independent where possible.
-- Explain decisions rather than implementation.
+- Explain structure rather than implementation.
+- Focus on long-term maintainability.
 - Reference detailed documentation instead of duplicating it.
+- Remain implementation independent whenever practical.
 
-Architecture documentation should evolve slowly.
+Architecture should evolve slowly compared to implementation.
 
 ---
 
 # Relationship to DevOS
 
-Architecture documents provide the conceptual foundation for all other repository knowledge.
+Architecture provides the foundation for repository knowledge.
 
 ```
-Why
-
-↓
-
-What
-
-↓
-
-Who
-
-↓
-
-How
+Architecture
 
 ↓
 
@@ -92,38 +107,7 @@ Knowledge Synchronization
 Release
 ```
 
-Planning and implementation should align with the architecture defined in this directory.
-
----
-
-# What Belongs Here
-
-Examples include:
-
-- Vision
-- Mission
-- System Architecture
-- Architectural Principles
-- Stakeholders
-- Domain Overview
-- High-Level Design
-- Architectural Constraints
-
----
-
-# What Does Not Belong Here
-
-Do not include:
-
-- Feature specifications
-- Implementation details
-- Coding patterns
-- Repository standards
-- Operational procedures
-- Temporary design discussions
-- Implementation history
-
-These belong elsewhere in the repository.
+Architectural decisions guide implementation and should remain consistent with the repository standards.
 
 ---
 
@@ -139,9 +123,15 @@ These belong elsewhere in the repository.
 
 ## Related Documentation
 
-- `docs/product/`
-- `docs/engineering/`
-- `docs/operations/`
+- `docs/playbooks/`
+- `docs/standards/`
+- `docs/templates/`
+
+---
+
+## Related Templates
+
+- `docs/templates/architecture-document-template.md`
 
 ---
 
