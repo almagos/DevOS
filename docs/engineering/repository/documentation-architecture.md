@@ -18,7 +18,7 @@
 
 # 1. Purpose
 
-The purpose of this architecture is to ensure that repository knowledge remains:
+The purpose of this architecture is to ensure that Canonical Knowledge remains:
 
 - Accurate
 - Discoverable
@@ -119,7 +119,7 @@ Knowledge is treated as a first-class artifact.
 
 Documentation is not an afterthought.
 
-Implementation is expected to update repository knowledge through the Knowledge Synchronization workflow.
+Implementation is expected to update Canonical Knowledge through the Knowledge Synchronization workflow.
 
 ---
 
@@ -338,7 +338,7 @@ Different systems own different kinds of information.
 |-------------|-----------------|
 | Planning | Project Management System |
 | Implementation | Version Control |
-| Repository Knowledge | Documentation |
+| Canonical Knowledge | Documentation |
 | Operational State | `.devos/` |
 
 Repository documentation should never duplicate planning information or implementation history.
