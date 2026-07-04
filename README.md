@@ -1,26 +1,53 @@
 # DevOS
 
-> **An AI-Native Development Operating System**
+> **A Knowledge Operating System for AI-Native Software Development**
 >
-> Build software the same way every time—using structured knowledge, standardized workflows, and AI-first engineering.
+> Build software through structured knowledge, standardized workflows, and AI-first engineering.
 
 ---
 
 # What is DevOS?
 
-DevOS is an opinionated Development Operating System designed for teams building software with AI.
+DevOS is a **Knowledge Operating System** for AI-native software development.
 
-It treats **knowledge**, **planning**, **implementation**, **validation**, and **documentation** as first-class artifacts rather than disconnected activities.
+It provides a structured operating model for building software where **knowledge**, **planning**, **implementation**, **validation**, **documentation**, and **automation** evolve together as a unified system.
 
-Instead of relying on undocumented tribal knowledge or prompt engineering, DevOS defines a repeatable operating model that both humans and AI agents can follow consistently.
+Rather than treating documentation as something produced after code is written, DevOS treats knowledge as the foundation upon which software is planned, implemented, validated, released, and continuously improved.
 
-DevOS is not a framework.
+The operating system enables humans and AI agents to collaborate using shared vocabulary, standardized workflows, canonical documentation, and reproducible operational state.
 
-It is not a project management tool.
+DevOS is intentionally independent of programming languages, frameworks, AI models, and development tools.
 
-It is not a coding agent.
+It integrates with them without becoming dependent on them.
 
-It is the operating system that coordinates them.
+---
+
+## What DevOS Is
+
+DevOS is:
+
+- A Knowledge Operating System
+- An AI-native development methodology
+- A repository architecture
+- A documentation architecture
+- A workflow orchestration model
+- A knowledge synchronization system
+- A reusable operating model for software teams
+
+---
+
+## What DevOS Is Not
+
+DevOS is not:
+
+- A programming framework
+- A project management tool
+- A coding agent
+- A documentation generator
+- A CI/CD platform
+- A replacement for GitHub, Linear or other engineering tools
+
+Instead, DevOS provides the operating model that connects those tools into a coherent software development system.
 
 ---
 
