@@ -342,3 +342,8 @@ Certification fails when any of the following occur:
 ## Related Templates
 
 - `docs/templates/playbook-template.md`
+
+
+Bootstrap Certification evaluates the repository at a point in time.
+
+Any material changes to repository architecture, documentation, playbooks, standards, templates or integrations invalidate previous certification results and require re-certification.
