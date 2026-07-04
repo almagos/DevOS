@@ -16,41 +16,39 @@
 
 # Documentation Architecture
 
-Repository knowledge is organized into the following layers.
+Repository knowledge is organized into three architectural layers.
 
 ```
-Repository Constitution
+Core DevOS
+│
+├── Repository Constitution
+├── Glossary
+├── Contracts
+├── Playbooks
+├── Standards
+├── Templates
+└── Integrations
 
 ↓
 
-Glossary
-
-↓
-
-Contracts
-
-↓
-
-Playbooks
-
-↓
-
-Standards
-
-↓
-
-Templates
-
-↓
-
-Domain Knowledge
+Project Knowledge
+│
+├── Product
+├── Engineering
+└── Operations
 
 ↓
 
 Generated Operational State
+│
+└── .devos/
 ```
 
-Each layer builds upon the previous layer.
+Each layer has a distinct responsibility.
+
+- **Core DevOS** defines how work is planned, implemented, validated and documented.
+- **Project Knowledge** describes the implemented product and its operation.
+- **Generated Operational State** supports automation and AI workflows and is never Canonical Knowledge.
 
 ---
 
@@ -58,16 +56,18 @@ Each layer builds upon the previous layer.
 
 New contributors should read documentation in the following order.
 
-| Level | Documents |
-|--------|-----------|
-| 0 | `AGENTS.md` |
-| 1 | Documentation Architecture<br>Repository Structure |
-| 2 | Glossary |
-| 3 | Relevant Playbooks |
-| 4 | Relevant Standards |
-| 5 | Relevant Templates |
-| 6 | Domain Documentation |
-| 7 | Assigned Task |
+| Level | Documents                                                                     |
+| ----- | ----------------------------------------------------------------------------- |
+| 0     | `AGENTS.md`                                                                   |
+| 1     | Documentation Architecture<br>Repository Structure                            |
+| 2     | Glossary                                                                      |
+| 3     | Relevant Playbooks                                                            |
+| 4     | Relevant Standards                                                            |
+| 5     | Relevant Templates                                                            |
+| 6     | Relevant Integration Documentation *(when interacting with external systems)* |
+| 7     | Domain Documentation                                                          |
+| 8     | Assigned Task                                                                 |
+
 
 ---
 
@@ -147,6 +147,18 @@ Provide reusable document structures.
 
 ---
 
+## Integrations
+
+Define how DevOS interacts with external platforms.
+
+| Document | Purpose |
+|----------|---------|
+| `integrations/README.md` | Integration architecture |
+| `integrations/linear/` | Planning integration |
+| `integrations/github/` | Implementation integration |
+
+---
+
 ## Domain Knowledge
 
 Project-specific knowledge is organized by domain.
@@ -209,6 +221,7 @@ The repository follows these principles.
 - Repository workflows are defined by Playbooks.
 - Repository rules are defined by Standards.
 - Recurring document structures are defined by Templates.
+- External platforms are governed by Integration documentation.
 
 ---
 
@@ -251,6 +264,14 @@ Avoid:
 - `playbooks/`
 - `standards/`
 - `templates/`
+
+---
+
+## Integrations
+
+- `integrations/`
+- `integrations/linear/`
+- `integrations/github/`
 
 ---
 
