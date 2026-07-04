@@ -4,6 +4,8 @@ Architectural Decision Records capture stable architectural decisions.
 
 They document the final decision and rationale rather than discussion history, implementation history, or meeting notes.
 
+> **ADR:** ADR-XXX
+>
 > **Status:** Proposed | Accepted | Superseded | Deprecated
 >
 > **Date:** YYYY-MM-DD
