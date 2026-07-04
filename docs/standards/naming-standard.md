@@ -160,7 +160,39 @@ Avoid generic names.
 
 ---
 
-# 7. Terminology
+# 7. Architectural Decision Record Naming
+
+Architectural Decision Records use the following filename convention:
+
+```
+adr-<three-digit-number>-<kebab-case-title>.md
+```
+
+Examples:
+
+```
+adr-001-repository-constitution.md
+
+adr-002-documentation-architecture.md
+
+adr-003-issue-context-model.md
+
+adr-004-knowledge-synchronization.md
+```
+
+The document title should use the matching ADR number.
+
+Example:
+
+```md
+# ADR-001: Repository Constitution
+```
+
+The filename and document title should always remain synchronized.
+
+---
+
+# 8. Terminology
 
 Repository terminology should remain consistent.
 
@@ -177,7 +209,7 @@ Repository terminology should not be redefined without updating the Glossary.
 
 ---
 
-# 8. Compliance
+# 9. Compliance
 
 Repository naming complies with this standard when:
 
@@ -187,7 +219,7 @@ Repository naming complies with this standard when:
 
 ---
 
-# 9. Exceptions
+# 10. Exceptions
 
 Exceptions should be rare.
 
@@ -195,7 +227,7 @@ They should improve clarity rather than reduce consistency.
 
 ---
 
-# 10. Related Documents
+# 11. Related Documents
 
 ## Repository Constitution
 
