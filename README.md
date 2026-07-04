@@ -419,10 +419,4 @@ The long-term vision for DevOS includes:
 
 ---
 
-# License
-
-Choose the license appropriate for your organization.
-
----
-
 > **DevOS is an operating system for building software—not just writing code.**
