@@ -10,7 +10,7 @@
 
 DevOS is a **Knowledge Operating System** for AI-native software development.
 
-It provides a structured operating model for building software where **knowledge**, **planning**, **implementation**, **validation**, **documentation**, and **automation** evolve together as a unified system.
+It provides a structured operating model for building software where **knowledge**, **planning**, **implementation**, **validation**, **documentation**, and **AI execution** evolve together as a unified system.
 
 Rather than treating documentation as something produced after code is written, DevOS treats knowledge as the foundation upon which software is planned, implemented, validated, released, and continuously improved.
 
@@ -138,6 +138,12 @@ Project Knowledge
 ├── Product
 ├── Engineering
 └── Operations
+
+↓
+
+AI Execution
+│
+└── .devos/prompts/
 
 ↓
 
@@ -371,15 +377,17 @@ Defines how external systems participate in the DevOS lifecycle.
 
 DevOS is intentionally modular.
 
-Organizations can extend it by adding:
+Organizations can extend DevOS by adding:
 
 - New Playbooks
 - New Standards
 - New Templates
 - New Integrations
-- New Automation
+- New AI Execution Prompts
 
-without changing the core operating model.
+Future versions of DevOS are expected to support repository-native execution while preserving backward compatibility with the existing prompt library.
+
+The core operating model remains unchanged.
 
 ---
 
@@ -407,16 +415,58 @@ Before contributing:
 
 # Roadmap
 
-The long-term vision for DevOS includes:
+DevOS is designed to evolve incrementally while preserving backward compatibility.
+
+The current release establishes:
+
+- Repository Constitution
+- Documentation Architecture
+- Engineering Workflows
+- Repository Certification
+- AI Prompt Library
+- Integration Framework
+
+Future releases will build upon this foundation.
+
+## Near-Term
 
 - Additional platform integrations
-- Automated Knowledge Synchronization
-- DevOS Upgrade workflows
+- Expanded certification workflows
+- Additional document templates
 - Repository health analysis
-- Context generation services
-- AI-assisted repository governance
-- Multi-project DevOS management
+- Automated Knowledge Synchronization
 
+## Long-Term Vision
+
+Today, DevOS operationalizes repository workflows through a reusable AI Prompt Library.
+
+As AI development environments continue to evolve, DevOS is designed to transition from prompt-driven execution toward repository-native execution.
+
+The long-term architecture is:
+
+```
+Playbooks
+│
+├── Define workflows.
+│
+▼
+Templates
+│
+├── Define outputs.
+│
+▼
+Repository-Native Execution
+│
+└── AI agents execute repository workflows directly from canonical knowledge.
+```
+
+In this model, prompts become lightweight entry points rather than the primary source of execution logic.
+
+The repository remains the canonical Source of Truth.
+
+AI agents consume structured repository knowledge directly, allowing DevOS to remain independent of specific AI providers or development tools.
+
+This evolution positions DevOS as a long-term operating system for autonomous software engineering rather than a collection of AI prompts.
 ---
 
 > **DevOS is an operating system for building software—not just writing code.**
