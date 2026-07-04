@@ -86,6 +86,7 @@ Requirements should be:
 Examples include:
 
 - Functional Requirements
+- Non-Functional Requirements
 - Business Rules
 - User Requirements
 - System Requirements
@@ -173,11 +174,23 @@ Examples:
 
 List related architecture documents.
 
+Examples:
+
+- System Architecture
+- Repository Architecture
+- Data Architecture
+
 ---
 
 ## Standards
 
 List governing repository standards.
+
+Examples:
+
+- Documentation Standard
+- Repository Standard
+- Naming Standard
 
 ---
 
@@ -185,11 +198,23 @@ List governing repository standards.
 
 List applicable playbooks.
 
+Examples:
+
+- Planning
+- Implementation
+- Validation
+
 ---
 
 ## Templates
 
 List related templates.
+
+Examples:
+
+- ADR Template
+- Architecture Document Template
+- Standard Template
 
 ---
 
