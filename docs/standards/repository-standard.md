@@ -79,19 +79,27 @@ Repository navigation should be predictable for both humans and AI agents.
 
 # 4. Top-Level Directories
 
-Each top-level directory has a single responsibility.
+Each top-level directory has a single architectural responsibility.
 
 | Directory | Purpose |
 |-----------|---------|
-| docs/ | Canonical Knowledge |
-| .devos/ | Generated Operational State |
-| supabase/ | Database Assets |
-| public/ | Static Assets |
-| src/ (or app/) | Application Source Code |
-| scripts/ | Repository Automation |
-| .github/ | GitHub Configuration |
+| `docs/` | Canonical Knowledge |
+| `.devos/` | Generated Operational State |
+| `.github/` | Repository automation and GitHub configuration |
+| `apps/` | Applications and deployable services |
+| `packages/` | Shared libraries and reusable modules |
+| `platform/` | Platform-specific infrastructure and configuration (for example `supabase/`, `vercel/`, `cloudflare/`) |
+| `scripts/` | Repository automation and developer tooling |
 
-Additional top-level directories should be introduced only when they represent a distinct architectural concern.
+Repository standards define architectural responsibilities rather than framework- or platform-specific directory names.
+
+Individual projects may organize implementation differently provided they preserve the responsibilities defined by this standard.
+
+Additional top-level directories should be introduced only when they represent a distinct architectural responsibility.
+
+Every top-level directory must have exactly one clearly defined purpose.
+
+Top-level responsibilities must not overlap.
 
 ---
 
