@@ -117,6 +117,8 @@ docs/operations/
 
 Only after understanding repository knowledge should implementation begin.
 
+If required documentation does not yet exist, stop at the highest available level of repository knowledge and follow the documented architecture rather than inventing new repository structure, workflows, standards, or templates.
+
 ---
 
 # 4. Standard Workflow
@@ -261,3 +263,8 @@ If implementation exposes weaknesses in DevOS:
 5. Update templates if document structures change.
 
 Architectural evolution should be deliberate and infrequent.
+
+
+This document intentionally contains minimal repository knowledge.
+
+Its purpose is to bootstrap navigation to the canonical documentation rather than duplicate it.
