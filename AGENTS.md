@@ -153,7 +153,7 @@ Refer to the corresponding playbook for detailed workflow instructions.
 
 ---
 
-# 5. Repository Systems
+# 5. Repository Configuration
 
 This repository integrates with external systems that act as Sources of Truth for specific responsibilities.
 
