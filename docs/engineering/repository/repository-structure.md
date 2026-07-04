@@ -208,7 +208,28 @@ Refer to `documentation-architecture.md` for detailed responsibilities.
 
 ---
 
-# 5. DevOS Structure
+# 5. Directory Conventions
+
+Every documentation directory should contain a `README.md`.
+
+Directory `README.md` files serve as navigation documents rather than knowledge documents.
+
+Each directory `README.md` should describe:
+
+- Purpose
+- What belongs in the directory
+- What does not belong in the directory
+- Related directories
+- Related documentation
+- Naming conventions (if applicable)
+
+Directory `README.md` files should not duplicate the contents of the documents within the directory.
+
+Their purpose is to help humans and AI agents navigate the repository consistently.
+
+---
+
+# 6. DevOS Structure
 
 ```text
 .devos/
@@ -236,7 +257,7 @@ Characteristics
 
 ---
 
-# 6. Artifact Placement Rules
+# 7. Artifact Placement Rules
 
 When creating new artifacts:
 
@@ -257,7 +278,7 @@ Every artifact has exactly one canonical location.
 
 ---
 
-# 7. Repository Ownership
+# 8. Repository Ownership
 
 | Directory | Primary Owner |
 |------------|---------------|
@@ -275,7 +296,7 @@ Ownership defines long-term stewardship.
 
 ---
 
-# 8. Repository Rules
+# 9. Repository Rules
 
 - Every directory has a single responsibility.
 - Every artifact has one canonical home.
@@ -284,10 +305,11 @@ Ownership defines long-term stewardship.
 - Source code must never become documentation.
 - Documentation must never become generated state.
 - Avoid creating new top-level directories unless the repository architecture is updated.
+- Every documentation directory should contain a `README.md` that serves as its canonical navigation document.
 
 ---
 
-# 9. Evolution
+# 10. Evolution
 
 The repository structure is expected to remain stable.
 
